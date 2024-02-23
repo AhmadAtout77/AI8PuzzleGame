@@ -1,0 +1,72 @@
+<html>
+
+<head>
+   <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+   <div class="header">
+
+      8 PUZZLE
+
+
+   </div>
+
+
+   <div class="container">
+
+
+
+      <div class="Puzzle-Grid">
+         <div class="Grid-Item I1" onclick="swap(1);">
+            1
+         </div>
+         <div class="Grid-Item I2" onclick="swap(2);">
+            2
+         </div>
+         <div class="Grid-Item I3" onclick="swap(3);">
+            3
+         </div>
+         <div class="Grid-Item I4" onclick="swap(4);">
+            4
+         </div>
+         <div class="Grid-Item I5" onclick="swap(5);">
+            5
+         </div>
+         <div class="Grid-Item I6" onclick="swap(6);">
+            6
+         </div>
+         <div class="Grid-Item I7" onclick="swap(7);">
+            7
+         </div>
+         <div class="Grid-Item I8" onclick="swap(8);">
+            8
+         </div>
+         <div class="Grid-Item-Space" id="space">
+
+         </div>
+
+      </div>
+      <div class="options">
+         <button onclick="solveA_star(1);" class="SButton"> SOLVE A* out of place </button>
+         <button onclick="solveA_star(2);" class="SButton"> SOLVE A* manhattan distance </button>
+         <button onclick="solveGreedy(1);" class="SButton"> SOLVE Greedy out of place </button>
+         <button onclick="solveGreedy(2);" class="SButton"> SOLVE Greedy manhattan distance </button>
+      </div>
+
+   </div>
+   <div class="solPath">
+
+
+      SOLUTION PATH:
+
+   </div>
+   <div class="testPath">
+      TEST PATH:
+   </div>
+
+   <script src="test.js"></script>
+</body>
+
+</html>
